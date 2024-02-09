@@ -16,6 +16,12 @@ public class KeysScript : MonoBehaviour
         animator = GetComponent<Animator>();
         gameManager = FindAnyObjectByType<GameManager>();
     }
+
+    private void Update()
+    {
+       keyTone.volume = gameManager.VolumeChanger();
+    }
+
     public void KeyActions()
     {
         keyTone.Play();

@@ -5,13 +5,14 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public List<GameObject> singList;
-    public List<GameObject> keyList;
-    public List<float> keySpeed;
+    public List<GameObject> songList;
+    List<GameObject> keyList;
     int keyIndex = 0;
     int playerKeyIndex;
+    float vol = 0.1f;
     public bool coPilotandNotAllow;
     bool playerTurn;
+    bool songPress;
     public float toneSpeed;
 
     public TextMeshProUGUI dText;
@@ -28,7 +29,6 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         MouseInput();
-        
     }
 
     void MouseInput()
@@ -41,24 +41,46 @@ public class GameManager : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider.CompareTag("Buttons") && !coPilotandNotAllow)
-                {
-                    StartCoroutine(ToneDelay());
-                }
-
                 if (hit.collider.CompareTag("Play"))
                 {
                     FindAnyObjectByType<PlayButton>().PlayButtonAction();
                 }
 
+                if (hit.collider.CompareTag("VolumeUp"))
+                {
+                    vol += .1f;
+                    VolumeChanger();
+                }
+
+                if (hit.collider.CompareTag("VolumeDown"))
+                {
+                    vol -= .1f;
+                    VolumeChanger();
+                }
+
+                if (hit.collider.CompareTag("SongButton") && !coPilotandNotAllow)
+                {
+                    songPress = !songPress;
+                    if (songPress)
+                    {
+                        StartCoroutine(ToneDelay());
+                        digitalScreen.ScreenTextChanger("HABABAM");
+                    }
+                    if (!songPress)
+                    {
+                        ResetCopilotValues();
+                    }
+                    
+                }
+
                 if (hit.collider.CompareTag("Keys") && !coPilotandNotAllow)
                 {
                     hit.collider.gameObject.GetComponent<KeysScript>().KeyActions();
-                    if (playerTurn && keyList.Count < singList.Count)
+                    if (playerTurn && keyList.Count < songList.Count)
                     {
                         keyList.Add(hit.collider.gameObject);
                         ToneSpeedChanger(playerKeyIndex);
-                        if (keyList[playerKeyIndex] == singList[playerKeyIndex])
+                        if (keyList[playerKeyIndex] == songList[playerKeyIndex])
                         {
                             keyList[playerKeyIndex].GetComponent<KeysScript>().ClickMaterial(true);
                         }
@@ -67,6 +89,7 @@ public class GameManager : MonoBehaviour
                             keyList[playerKeyIndex].GetComponent<KeysScript>().ClickMaterial(false);
                             digitalScreen.ScreenTextChanger("YANLIS TUSLAMA");
                             coPilotandNotAllow = true;
+                            ResetCopilotValues();
                         }
 
                         playerKeyIndex++;
@@ -78,17 +101,17 @@ public class GameManager : MonoBehaviour
 
     IEnumerator ToneDelay()
     {
-        while (keyIndex < singList.Count)
+        while (keyIndex < songList.Count)
         {
             coPilotandNotAllow = true;
             ToneSpeedChanger(keyIndex);
-            singList[keyIndex].GetComponent<KeysScript>().KeyActions();
-            singList[keyIndex].GetComponent<KeysScript>().MaterialChanger();
+            songList[keyIndex].GetComponent<KeysScript>().KeyActions();
+            songList[keyIndex].GetComponent<KeysScript>().MaterialChanger();
             keyIndex++;
             yield return new WaitForSeconds(toneSpeed);
         }
 
-        if (keyIndex == singList.Count)
+        if (keyIndex == songList.Count)
         {
             coPilotandNotAllow = false;
             dText.text = "SIRA SIZDE";
@@ -117,5 +140,20 @@ public class GameManager : MonoBehaviour
                 break;
         }
 
+    }
+
+    public float VolumeChanger()
+    {
+        digitalScreen.VolumeTextChanger(Mathf.Round(vol * 10).ToString());
+        return vol;
+    }
+
+    public void ResetCopilotValues()
+    {
+        keyIndex = 0;
+        playerKeyIndex = 0;
+        keyList.Clear();
+        playerTurn = false;
+        digitalScreen.ScreenTextChanger("Serbest!");
     }
 }
