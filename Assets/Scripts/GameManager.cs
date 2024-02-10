@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 
@@ -7,13 +8,16 @@ public class GameManager : MonoBehaviour
 {
     public List<GameObject> songList;
     List<GameObject> keyList;
-    int keyIndex = 0;
+    public int keyIndex = 0;
     int playerKeyIndex;
     float vol = 0.1f;
     public bool coPilotandNotAllow;
     bool playerTurn;
     bool songPress;
     public float toneSpeed;
+    [SerializeField] ParticleSystem[] fireworks;
+
+    public bool stopCopilot;
 
     public TextMeshProUGUI dText;
 
@@ -60,15 +64,16 @@ public class GameManager : MonoBehaviour
 
                 if (hit.collider.CompareTag("SongButton") && !coPilotandNotAllow)
                 {
+                    
                     songPress = !songPress;
                     if (songPress)
                     {
-                        StartCoroutine(ToneDelay());
+                        StartCoroutine(ToneDelay()); 
                         digitalScreen.ScreenTextChanger("HABABAM");
                     }
                     if (!songPress)
                     {
-                        ResetCopilotValues();
+                        ResetCopilotValues("Serbest!");
                     }
                     
                 }
@@ -87,11 +92,19 @@ public class GameManager : MonoBehaviour
                         else
                         {
                             keyList[playerKeyIndex].GetComponent<KeysScript>().ClickMaterial(false);
-                            digitalScreen.ScreenTextChanger("YANLIS TUSLAMA");
+                            digitalScreen.ScreenTextChanger("Yanlis Tuslama");
                             coPilotandNotAllow = true;
-                            ResetCopilotValues();
+                            Invoke("ResetDelay", 3f);
                         }
 
+                        if (keyList.SequenceEqual(songList))
+                        {
+                            coPilotandNotAllow = true;
+                            digitalScreen.ScreenTextChanger("Tebrikler");
+                            foreach (ParticleSystem effects in fireworks) { effects.Play(); }
+                            Invoke("ResetDelay", 3f);
+                        }
+                       
                         playerKeyIndex++;
                     }
                 }
@@ -99,9 +112,15 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void Stopper()
+    {
+        stopCopilot = true;
+        StopCoroutine(ToneDelay());
+    }
+
     IEnumerator ToneDelay()
     {
-        while (keyIndex < songList.Count)
+        while (keyIndex < songList.Count && !stopCopilot)
         {
             coPilotandNotAllow = true;
             ToneSpeedChanger(keyIndex);
@@ -148,12 +167,21 @@ public class GameManager : MonoBehaviour
         return vol;
     }
 
-    public void ResetCopilotValues()
+    void ResetDelay()
+    {
+        ResetCopilotValues("Serbest");
+    }
+
+    public void ResetCopilotValues(string Message)
     {
         keyIndex = 0;
         playerKeyIndex = 0;
         keyList.Clear();
         playerTurn = false;
-        digitalScreen.ScreenTextChanger("Serbest!");
+        songPress = false;
+        coPilotandNotAllow = false;
+        stopCopilot = false;
+        foreach (ParticleSystem effects in fireworks) { effects.Stop(); }
+        digitalScreen.ScreenTextChanger(Message);
     }
 }

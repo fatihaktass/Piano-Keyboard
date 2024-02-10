@@ -24,12 +24,14 @@ public class PlayButton : MonoBehaviour
             gameManager.coPilotandNotAllow = true;
             digitalScreen.DigitalScreenAction();
             anim.SetTrigger("Reset");
+            gameManager.Stopper();
         }
         if (Pressed)
         {
             gameManager.coPilotandNotAllow = false;
             digitalScreen.DigitalScreenAction();
             anim.SetTrigger("Pressed");
+            gameManager.ResetCopilotValues("Hos Geldiniz");
         }
     }
 }

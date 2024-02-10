@@ -9,6 +9,7 @@ public class KeysScript : MonoBehaviour
     public Material originalMat, clickMat;
     public Material trueClickMat, wrongClickMat;
     GameManager gameManager;
+    [SerializeField] string noteName;
 
     private void Start()
     {
@@ -26,6 +27,7 @@ public class KeysScript : MonoBehaviour
     {
         keyTone.Play();
         animator.SetTrigger("Clicking");
+        FindAnyObjectByType<DigitalScreen>().ScreenTextChanger(noteName);
     }
 
     public void MaterialChanger()

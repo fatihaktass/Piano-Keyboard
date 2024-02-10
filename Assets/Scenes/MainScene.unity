@@ -229,6 +229,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &101306757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 101306758}
+  m_Layer: 0
+  m_Name: Fireworks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &101306758
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101306757}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 431148939}
+  - {fileID: 1327195559}
+  - {fileID: 565168476}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &174193008
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,6 +433,84 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &431148938
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 101306758}
+    m_Modifications:
+    - target: {fileID: 6345698633707439847, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853976492821318, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984562, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -11.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984564, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_Name
+      value: SF_Rainbow
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977312398391, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+--- !u!4 &431148939 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+  m_PrefabInstance: {fileID: 431148938}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &433702159
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,6 +700,89 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486255489}
   m_Mesh: {fileID: -1974180302436617907, guid: 55278c57f7a2788409406465057a7b2e, type: 3}
+--- !u!1001 &565168475
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 101306758}
+    m_Modifications:
+    - target: {fileID: 6345698633707439847, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853976492821318, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984562, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984564, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_Name
+      value: SF_Rainbow (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977312398391, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+--- !u!4 &565168476 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+  m_PrefabInstance: {fileID: 565168475}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &626465222 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7750853977139984562, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+  m_PrefabInstance: {fileID: 565168475}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &670930016
 GameObject:
   m_ObjectHideFlags: 0
@@ -1195,8 +1390,14 @@ MonoBehaviour:
   - {fileID: 5975514223594686810}
   - {fileID: 8705364275324417305}
   - {fileID: 867796609018772732}
+  keyIndex: 0
   coPilotandNotAllow: 0
   toneSpeed: 0
+  fireworks:
+  - {fileID: 1148437121}
+  - {fileID: 1327195561}
+  - {fileID: 626465222}
+  stopCopilot: 0
   dText: {fileID: 922356262}
 --- !u!1 &922356260
 GameObject:
@@ -1424,6 +1625,94 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 85, y: 89.969, z: 0.0039978027}
+--- !u!198 &1148437121 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7750853977139984562, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+  m_PrefabInstance: {fileID: 431148938}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1327195558
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 101306758}
+    m_Modifications:
+    - target: {fileID: 6345698633707439847, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853976492821318, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984562, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 24.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977139984564, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: m_Name
+      value: SF_Rainbow (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750853977312398391, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+--- !u!4 &1327195559 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7750853977139984563, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+  m_PrefabInstance: {fileID: 1327195558}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1327195561 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7750853977139984562, guid: 6a7b26737f4a19a40b5f385c66dc96a9, type: 3}
+  m_PrefabInstance: {fileID: 1327195558}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &34642923305639569
 GameObject:
   m_ObjectHideFlags: 0
@@ -3206,6 +3495,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: SI - B
 --- !u!1 &2428452092782475884
 GameObject:
   m_ObjectHideFlags: 0
@@ -4364,6 +4654,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: SI - B
 --- !u!23 &4101535713528328553
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4566,6 +4857,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: SOL# - G#
 --- !u!1 &4402341317174799667
 GameObject:
   m_ObjectHideFlags: 0
@@ -4878,6 +5170,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: FA# - F#
 --- !u!33 &4705563722248763646
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5197,6 +5490,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: SI - B
 --- !u!4 &5132718377641430914
 Transform:
   m_ObjectHideFlags: 0
@@ -5332,6 +5626,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: FA - F
 --- !u!4 &5294880554069303230
 Transform:
   m_ObjectHideFlags: 0
@@ -5531,6 +5826,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: SOL - G
 --- !u!33 &5427242143508352912
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5673,6 +5969,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: SOL - G
 --- !u!4 &5482260275365370365
 Transform:
   m_ObjectHideFlags: 0
@@ -5879,6 +6176,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: MI - E
 --- !u!1 &5579905970571556070
 GameObject:
   m_ObjectHideFlags: 0
@@ -6013,6 +6311,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: FA - F
 --- !u!1 &5751950669762390609
 GameObject:
   m_ObjectHideFlags: 0
@@ -6307,6 +6606,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: RE# - D#
 --- !u!23 &5896669037692506667
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6533,6 +6833,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: MI - E
 --- !u!1 &5975514223594686810
 GameObject:
   m_ObjectHideFlags: 0
@@ -7097,6 +7398,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: RE# - D#
 --- !u!65 &6328895500252600467
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7736,6 +8038,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: SOL - G
 --- !u!33 &6803081379653887570
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -7947,6 +8250,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: DO - C
 --- !u!1 &7015810683359385667
 GameObject:
   m_ObjectHideFlags: 0
@@ -8183,6 +8487,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: DO - C
 --- !u!23 &7119548010031852773
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8403,6 +8708,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: SOL - G
 --- !u!65 &7249017394225001505
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8557,6 +8863,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: LA# - A#
 --- !u!65 &7261765284154933921
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8711,6 +9018,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: LA - A
 --- !u!23 &7288338472718339077
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8922,6 +9230,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: RE - D
 --- !u!4 &7328206080880180108
 Transform:
   m_ObjectHideFlags: 0
@@ -9205,6 +9514,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: DO - C
 --- !u!65 &7388795255922806856
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9359,6 +9669,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: DO# - C#
 --- !u!23 &7408021888385152400
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9639,6 +9950,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: DO - C
 --- !u!65 &7484394124038453350
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9793,6 +10105,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: LA - A
 --- !u!82 &7493212846362177805
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9905,6 +10218,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: RE# - D#
 --- !u!65 &7493212846362177807
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10059,6 +10373,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: SI - B
 --- !u!33 &7524193930029105762
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -10179,6 +10494,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: DO# - C#
 --- !u!65 &7603096374092273636
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10455,6 +10771,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: RE - D
 --- !u!65 &7719297427667452399
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10635,6 +10952,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: DO - C
 --- !u!82 &7814136685200300005
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10978,6 +11296,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: FA# - F#
 --- !u!65 &7916876807598914023
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11132,6 +11451,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: LA# - A#
 --- !u!65 &7970042819301096242
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11294,6 +11614,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: FA - F
 --- !u!4 &8009100560585510057
 Transform:
   m_ObjectHideFlags: 0
@@ -11443,6 +11764,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: LA# - A#
 --- !u!65 &8031821859411559587
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11661,6 +11983,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: LA - A
 --- !u!82 &8117413514504066486
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11773,6 +12096,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: SI - B
 --- !u!65 &8117413514504066488
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11927,6 +12251,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: MI - E
 --- !u!65 &8126256081186235095
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12123,6 +12448,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: RE - D
 --- !u!82 &8195593674940960352
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12235,6 +12561,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: FA# - F#
 --- !u!65 &8195593674940960354
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12389,6 +12716,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: RE# - D#
 --- !u!82 &8212620113716433278
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12501,6 +12829,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: DO# - C#
 --- !u!65 &8212620113716433280
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12723,6 +13052,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: DO# - C#
 --- !u!65 &8323106022212811188
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13120,6 +13450,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: LA - A
 --- !u!1 &8441079713606148939
 GameObject:
   m_ObjectHideFlags: 0
@@ -13318,6 +13649,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: FA - F
 --- !u!65 &8476566434451550841
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13529,6 +13861,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: SOL# - G#
 --- !u!65 &8500660334851736896
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13740,6 +14073,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: FA# - F#
 --- !u!65 &8540867153392999068
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14057,6 +14391,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: LA# - A#
 --- !u!65 &8617646602087173798
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14211,6 +14546,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: SOL# - G#
 --- !u!65 &8656295369176625227
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14513,6 +14849,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: RE - D
 --- !u!23 &8778244169680228264
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14703,6 +15040,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: SOL - G
 --- !u!65 &8798738231072514329
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14857,6 +15195,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: FA# - F#
 --- !u!65 &8848110308821899904
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15011,6 +15350,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: DO# - C#
 --- !u!65 &8851696542589281534
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15173,6 +15513,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: MI - E
 --- !u!65 &8865633496176949576
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15525,6 +15866,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: FA - F
 --- !u!65 &8954045161164608020
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15763,6 +16105,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: SOL# - G#
 --- !u!65 &9002518510082503598
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15917,6 +16260,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: DO - C
 --- !u!65 &9031951767297505530
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16121,6 +16465,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: SOL# - G#
 --- !u!65 &9071464516081120512
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16275,6 +16620,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: LA# - A#
 --- !u!65 &9104599667773042891
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16429,6 +16775,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: LA - A
 --- !u!82 &9128030319396113954
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16541,6 +16888,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: MI - E
 --- !u!65 &9128030319396113956
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16830,6 +17178,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: RE - D
 --- !u!65 &9182652030797007440
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17048,6 +17397,7 @@ MonoBehaviour:
   clickMat: {fileID: 2100000, guid: a12ec0cecbbac444cab9f9ef4a5e7396, type: 2}
   trueClickMat: {fileID: 2100000, guid: 6ba81fae757be6d49853ed9a9133e009, type: 2}
   wrongClickMat: {fileID: 2100000, guid: 7a33f215d0798fa4d8043631c56af7e9, type: 2}
+  noteName: RE# - D#
 --- !u!65 &9208745008781215533
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17101,3 +17451,4 @@ SceneRoots:
   - {fileID: 183816928}
   - {fileID: 921185104}
   - {fileID: 4894377994409918744}
+  - {fileID: 101306758}
