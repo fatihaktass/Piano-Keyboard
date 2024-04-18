@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     List<GameObject> keyList;
     public int keyIndex = 0;
     int playerKeyIndex;
-    float vol = 0.1f;
+    float vol = .5f;
     public bool coPilotandNotAllow;
     bool playerTurn;
     bool songPress;
@@ -163,6 +163,12 @@ public class GameManager : MonoBehaviour
 
     public float VolumeChanger()
     {
+        if (vol > 1)
+            vol = 1;
+
+        if (vol < 0)
+            vol = 0;
+
         digitalScreen.VolumeTextChanger(Mathf.Round(vol * 10).ToString());
         return vol;
     }

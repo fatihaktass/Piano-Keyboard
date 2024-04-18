@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayButton : MonoBehaviour
@@ -7,6 +8,8 @@ public class PlayButton : MonoBehaviour
     bool Pressed = false;
 
     DigitalScreen digitalScreen;
+
+    public List<GameObject> keySounds;
 
     private void Start()
     {
@@ -25,6 +28,7 @@ public class PlayButton : MonoBehaviour
             digitalScreen.DigitalScreenAction();
             anim.SetTrigger("Reset");
             gameManager.Stopper();
+            foreach (GameObject sound in keySounds) { sound.GetComponent<AudioSource>().Stop(); }
         }
         if (Pressed)
         {
