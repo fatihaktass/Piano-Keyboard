@@ -18,10 +18,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] ParticleSystem[] fireworks;
 
     public bool stopCopilot;
-
     public TextMeshProUGUI dText;
 
     DigitalScreen digitalScreen;
+
+    public AudioSource onePressButton;
 
     private void Start()
     {
@@ -54,20 +55,26 @@ public class GameManager : MonoBehaviour
                 {
                     vol += .1f;
                     VolumeChanger();
+
+                    if (!coPilotandNotAllow)
+                        onePressButton.Play();
                 }
 
                 if (hit.collider.CompareTag("VolumeDown"))
                 {
                     vol -= .1f;
                     VolumeChanger();
+
+                    if(!coPilotandNotAllow)
+                        onePressButton.Play();
                 }
 
                 if (hit.collider.CompareTag("SongButton") && !coPilotandNotAllow)
                 {
-                    
                     songPress = !songPress;
                     if (songPress)
                     {
+                        FindAnyObjectByType<PlayButton>().CloseAllKeySound();
                         StartCoroutine(ToneDelay()); 
                         digitalScreen.ScreenTextChanger("HABABAM");
                     }
@@ -168,6 +175,8 @@ public class GameManager : MonoBehaviour
 
         if (vol < 0)
             vol = 0;
+
+        onePressButton.volume = vol;
 
         digitalScreen.VolumeTextChanger(Mathf.Round(vol * 10).ToString());
         return vol;

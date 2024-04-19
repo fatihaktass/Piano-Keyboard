@@ -10,6 +10,7 @@ public class PlayButton : MonoBehaviour
     DigitalScreen digitalScreen;
 
     public List<GameObject> keySounds;
+    public AudioSource ButtonOpeningSFX, ButtonClosingSFX;
 
     private void Start()
     {
@@ -24,18 +25,25 @@ public class PlayButton : MonoBehaviour
 
         if (!Pressed)
         {
+            ButtonClosingSFX.Play();
             gameManager.coPilotandNotAllow = true;
             digitalScreen.DigitalScreenAction();
             anim.SetTrigger("Reset");
             gameManager.Stopper();
-            foreach (GameObject sound in keySounds) { sound.GetComponent<AudioSource>().Stop(); }
+            CloseAllKeySound();
         }
         if (Pressed)
         {
+            ButtonOpeningSFX.Play();
             gameManager.coPilotandNotAllow = false;
             digitalScreen.DigitalScreenAction();
             anim.SetTrigger("Pressed");
             gameManager.ResetCopilotValues("Hos Geldiniz");
         }
+    }
+
+    public void CloseAllKeySound()
+    {
+        foreach (GameObject sound in keySounds) { sound.GetComponent<AudioSource>().Stop(); }
     }
 }
